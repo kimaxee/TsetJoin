@@ -5,8 +5,9 @@ var loginPw;
 var loginBox;
 
 function br() {
-    document.write("<
+    document.write("<br>");
 }
+
 var now = new Date();
     
     
