@@ -12,11 +12,10 @@ var memberBirthday;
 var confirmPw;
 
 
-function checkId() {
+function checkId(id) {
     id = memberId.value;
     if (id.length < 4 || id.length > 12) {
         alert("아이디는 4자이상 12자이하로 입력하세요");
-        return;
     }
     if (id.length >=4 && id.length <= 12) {
         console.log("ok id");
@@ -31,7 +30,6 @@ function checkPw1() {
     pw1 = memberPw1.value;
     if (pw1.length < 4 || pw1.length > 12) {
         alert("암호는 4자이상 12자이하로 입력하세요");
-        return;
     }
     if (pw1.length >=4 && pw1.length <= 12) {
         console.log("ok pw1");
@@ -49,7 +47,8 @@ function checkPw2() {
         console.log("ok pw2")
         return true;
     } else {
-        console.log("ok pw2")
+        alert("암호가 일치하지 않습니다.")
+        console.log("no pw2")
         return false;
     }
 }
@@ -58,7 +57,6 @@ function checkName() {
     member_name = memberName.value;
     if (member_name.length < 2 || member_name.length > 8) {
         alert("이름은 2자이상 8자이하로 입력하세요");
-        return;
     }
     if (member_name.length >=2 && member_name.length <= 6) {
         console.log("ok member_name");
@@ -73,7 +71,6 @@ function checkEmail() {
     email = memberEmail.value;
     if (email.length < 4 || email.length > 25) {
         alert("이메일은 4자이상 25자이하로 입력하세요");
-        return;
     }
     if (email.length >=4 && email.length <= 25) {
         console.log("ok email");

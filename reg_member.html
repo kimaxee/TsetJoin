@@ -15,12 +15,12 @@
             <legend>회원가입</legend>
             <ul>
                 <li><label class="reg" for="member_id">아이디</label>
-                    <input id="member_id" type="text" size="18" minlength="4" maxlength="12" placeholder="4자리이상,12자리이하"
-                        required oninput="checkId()">
+                    <input id="member_id" type="text" size="18" minlength="4" placeholder="4자리이상,12자리이하"
+                        required onblur="checkId(this.value)">
                 </li>
                 <li><label class="reg" for="member_pw1">암호</label>
                     <input id="member_pw1" type="password" size="18" minlength="4" maxlength="12"
-                        placeholder="4자리이상,12자리이하" required oninput="checkPw1()">
+                        placeholder="4자리이상,12자리이하" required>
                 </li>
                 <li><label class="reg" for="member_pw2">암호 재입력</label>
                     <input id="member_pw2" type="password" size="18" minlength="4" maxlength="12"
@@ -28,11 +28,11 @@
                 </li>
                 <li><label class="reg" for="member_name">이름</label>
                     <input id="member_name" type="text" size="18" minlength="2" maxlength="6" placeholder="2자리이상,6자리이하"
-                        required oninput="checkName()">
+                        required>
                 </li>
                 <li><label class="reg" for="member_email">이메일</label>
                     <input id="member_email" type="email" size="18" minlength="4" maxlength="25"
-                        placeholder="4자리이상,25자리이하" required oninput="checkEmail()">
+                        placeholder="4자리이상,25자리이하" required>
                 </li>
                 <li><label class="reg" for="member_birthday">생년월일</label>
                     <input id="member_birthday" type="text" size="2">년
