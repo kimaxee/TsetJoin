@@ -4,13 +4,8 @@ var loginId;
 var loginPw;
 var loginBox;
 
-function br() {
-    document.write("<br>");
-}
-
 var now = new Date();
-    
-    
+        
 document.write(now.getFullYear() + "년 "
     + (now.getMonth()+1) + "월 "
     + now.getDate() + "일 "
