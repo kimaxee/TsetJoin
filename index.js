@@ -18,7 +18,7 @@ function loginInfo() {
 }
 
 function procLogin() {
-    loginBox.innerHTML = id + " 회원님 반갑습니다." + "<a href='q081.html'><input type='button' value='뒤로가기'></a>"
+    loginBox.innerHTML = id + " 회원님 반갑습니다." + "<a href='index.html'><input type='button' value='뒤로가기'></a>"
 }
 
 window.onload = function () {
